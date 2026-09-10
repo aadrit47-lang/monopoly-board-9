@@ -1,0 +1,162 @@
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+/* ========================= */
+/*          BOARD            */
+/* ========================= */
+
+.board {
+    width: 900px;
+    height: 900px;
+    position: relative;
+
+    background: url("image.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ========================= */
+/*       PROPERTY CARDS      */
+/* ========================= */
+
+.property {
+    position: absolute;
+
+    width: 70px;
+    height: 112px;
+
+    box-sizing: border-box;
+
+    border: 2px solid rgb(95, 39, 1);
+
+    background: rgba(255, 255, 255, 0.7);
+
+    text-align: center;
+
+    cursor: move;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* ========================= */
+/*        BOTTOM ROW         */
+/* ========================= */
+
+.bottom-card {
+    top: 85.5%;
+}
+
+
+/*
+   The bottom row has 8 property
+   spaces between the two corner
+   spaces.
+*/
+
+#card1 {
+    left: 13.8%;
+}
+
+#card2 {
+    left: 22.0%;
+}
+
+#card3 {
+    left: 30.0%;
+}
+
+#card4 {
+    left: 38.0%;
+}
+
+
+/* Existing card */
+#garden {
+    left: 46.0%;
+}
+
+
+/* Remaining cards */
+
+#card6 {
+    left: 54.0%;
+}
+
+#card7 {
+    left: 62.0%;
+}
+
+
+/* Existing card */
+#mominpore {
+    left: 78.0%;
+}
+#card8 {
+    left: 70.0%;
+}
+.property {
+    position: absolute;
+    width: 70px;
+    height: 112px;
+    box-sizing: border-box;
+
+    border: 2px solid rgb(95, 39, 1);
+    background: rgba(255, 255, 255, 0.8);
+
+    text-align: center;
+    cursor: move;
+
+    padding: 30px 5px 5px 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* ONE STRIP AT THE TOP OF EACH CARD */
+.property::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 25px;
+
+    background: #ff0000;
+}
+#card1::before,
+#card2::before, 
+#card4::before,
+#garden::before {
+    background: #87CEEB;
+}
+
+#card6::before,
+#card7::before {
+    background: #8B4513;
+}
+#card3::before,
+#card8::before{
+    background:transparent;
+}
+#mominpore::before {
+    background: #8B4513;
+}
